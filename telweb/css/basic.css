@@ -1,0 +1,209 @@
+@charset "utf-8";
+*{
+	padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+	padding: 0 10px;
+}
+body{
+    color: #585858;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+em{
+    font-style: normal;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+ul, li{
+	list-style: none;
+}
+
+.index_top{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    background: #ffe109;
+}
+.index_top img{
+    height: 60px;
+}
+
+.index_slideBox{
+	position: relative;
+	height: auto;
+    overflow: hidden;
+     width: 100%;
+}
+.index_slideBox .bd{
+    width: 100%;
+}
+.index_slideBox ul {
+    width: 100% !important;
+}
+.slideBox ul li{
+    width: 100%;
+	height: auto;
+    overflow: hidden;
+}
+.index_slideBox img{
+	width: 100%;
+}
+.index_slideBox .hd{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+.index_slideBox .hd li{
+	width: 20%;
+	height: 6px;
+	background: rgba(255, 255, 255, 0.6);
+	display: block;
+	float: left;
+}
+.index_slideBox .hd li.on{
+	background: #11A9EC;
+}
+
+
+/*幻灯片下面导航*/
+.categoryList {
+	padding-top: 10px;
+	overflow: hidden;
+    border-bottom: 1px #f9f9f9 solid;
+}
+.categoryList .itemTop {
+    float: left;
+    width: 20%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+.categoryList .categoryImg {
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+.categoryList .categoryImg img {
+    width: 100%;
+    height: auto;
+}
+/**/
+.indexBox {
+    border-top: 1px #e4e4e4 solid;
+    margin-top: 10px;
+}
+.newIndexBox .newIndexBoxTitle {
+    height: 40px;
+    line-height: 1;
+    padding: 10px 0;
+    padding-left: 20px;
+    font-size: 16px;
+    border-bottom: 1px #f7f7f7 solid;
+    position: relative;
+}
+.newIndexBox .newIndexBoxTitle .bg {
+    height: 100%;
+    width: 3px;
+    display: inline-block;
+    vertical-align: -5px;
+    margin-right: 7px;
+    border-radius: 6px;
+}
+.newIndexBox .newIndexBoxTitle .bg.style1 {
+    background-color: #ffbc00;
+}
+.itemList {
+    min-height: 180px;
+    overflow: hidden;
+}
+.itemList .item {
+    width: 33.33%;
+    position: relative;
+}
+.itemList .item img {
+    width: 100%;
+}
+.displayBox {
+    display: -webkit-box;
+    display: box;
+}
+
+.bournBox .bournBoxTitle {
+    height: 50px;
+    line-height: 50px;
+    margin: 0 40px;
+    border-bottom: 1px #ababab solid;
+    position: relative;
+    top: -24px;
+}
+.newIndexBoxTitleBg{
+	background-color: #f6f6f6;
+}
+.bournBox .bournBoxTitle span {
+    display: block;
+    width: 110px;
+    height: 44px;
+    background: url(../images/icon-item1.png) no-repeat 13px 14px;
+    background-color: #f6f6f6;
+    background-size: 20px;
+    padding-left: 38px;
+    margin: 0 auto;
+    position: relative;
+    top: 25px;
+}
+
+.slideTabBox{
+    overflow: hidden;
+}
+.bournTopList .bournList {
+    padding: 7px 6px;
+}
+.bournTopList .bournList li {
+    font-size: 16px;
+    color: #333;
+    padding: 0 11px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 15px;
+    width: 33%;
+	text-align: center;
+	cursor: pointer;
+}
+.bournTopList .bournList li.hover,.bournTopList .bournList li.on {
+    background-color: #ffc31a;
+    color: #fff;
+}
+.bournChildList {
+    margin: 5px 10px;
+}
+.bournChildList li {
+    float: left;
+    padding: 3px 0;
+    border-radius: 3px;
+    border: 1px transparent solid;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 5px;
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+
+
