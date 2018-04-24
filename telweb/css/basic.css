@@ -58,15 +58,17 @@ ul, li{
 }
 .index_slideBox .hd{
 	position: absolute;
-	bottom: 0px;
+	bottom: 10px;
 	width: 100%;
+	text-align: center;
 }
 .index_slideBox .hd li{
-	width: 20%;
-	height: 6px;
+	width: 10px;
+	height: 10px;
 	background: rgba(255, 255, 255, 0.6);
 	display: block;
-	float: left;
+	display: inline-block;
+	border-radius: 50%;
 }
 .index_slideBox .hd li.on{
 	background: #11A9EC;
@@ -167,7 +169,8 @@ ul, li{
     overflow: hidden;
 }
 .bournTopList .bournList {
-    padding: 7px 6px;
+	padding: 7px 6px;
+	border-bottom: 1px solid #F2F2F2;
 }
 .bournTopList .bournList li {
     font-size: 16px;
@@ -185,7 +188,8 @@ ul, li{
     color: #fff;
 }
 .bournChildList {
-    margin: 5px 10px;
+	margin: 5px 10px;
+	overflow: hidden;
 }
 .bournChildList li {
     float: left;
@@ -198,7 +202,177 @@ ul, li{
     width: 20%;
 }
 
+.bournData .bournImg {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+.bournData .bournImg img{
+	width: 100%;
+}
+.bournData .bournImg .bournMsgTop {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    z-index: 100;
+    height: 24px;
+    line-height: 24px;
+    color: #fff;
+    background: url(../images/icon-item2.png) no-repeat 12px 4px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 12px;
+    background-size: 12px;
+    padding: 0 10px;
+    padding-left: 30px;
+    border-radius: 13px;
+}
+.bournData .bournImg .bournMsgBottm {
+    position: absolute;
+    bottom: 20px;
+    right: 15px;
+    z-index: 100;
+    width: 73px;
+    height: 46px;
+    text-align: center;
+}
+.bournData .bournImg .bournMsgBottm .top {
+    height: 28px;
+    line-height: 28px;
+    background-color: #ffc31a;
+    color: #fff;
+}
+.bournData .bournImg .bournMsgBottm .bottom {
+    height: 18px;
+    line-height: 18px;
+    background-color: #fff;
+    color: #ffc31a;
+}
+.bournData .bournText {
+    position: relative;
+    padding: 10px 15px;
+}
+.bournData .bournText p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.bournData .bournText .bournTitle {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.bournData .bournText .status {
+    color: #333;
+    font-size: 12px;
+    margin-right: 5px;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+    padding: 0 10px;
+    color: #fff;
+    background-color: #fff;
+}
+.bournData .bournText .status.style1 {
+    background-color: #f68b6e;
+}
+.bournData .bournText .bournDes {
+    color: #ababab;
+    font-size: 12px;
+}
+/*首页底部*/
+.zhanwei{
+	width: 100%;
+	height: 55px;
+}
+.jz_conv_8888_bottom-box {
+    position: fixed;
+    width: 100%;
+    z-index: 99990;
+    height: 55px;
+    left: 0;
+    bottom: 0;
+}
+.jz_conv_8888_innerWrapper {
+    width: 100%;
+    height: 55px;
+    border-top: 1px solid #015d7c;
+    background: #0181cc;
+}
+.jz_conv_8888_bottom-item {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.jz_conv_8888_bottom-item-chat {
+    border-right: 1px solid #015d7c;
+    height: 41px;
+    margin-top: 7px;
+}
+.jz_conv_8888_bottom-item-icon img {
+    width: 25px;
+    height: 25px;
+}
+.jz_conv_8888_bottom-item-text {
+    color: #fff;
+}
 
+.public_top{
+	position: relative;
+	height: 50px;
+    background-size: auto 50px;
+    border-bottom: #d4d4d4 1px solid;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #f4f4f4;
+}
+.h-city {
+	position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    padding: 10px 0 10px 10px;
+    font-size: 24px;
+    color: #3a3a3a;
+    font-family: "宋体";
+    font-weight: bold;
+}
+.headerCenter {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+.m2_list_1 {
+    display: -webkit-box;
+    display: flex;
+    display: -webkit-flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-bottom: 10px;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+.m2_list_1 li {
+    width: 25%;
+    height: 25px;
+    line-height: 25px;
+    border-right: 1px #ddd solid;
+    border-top: 1px #ddd solid;
+    text-align: center;
+    font-size: 0.14rem;
+    color: #888;
+    position: relative;
+    background-color: #fff;
+}
 
 
 
