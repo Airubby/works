@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" name="viewport" id="viewport" />
+	<link rel="stylesheet" type="text/css" href="css/basic.css" />
+</head>
+
+<body>
+	<div class="public_top">
+		<a href="javascript:;" onclick="location.href='javascript:history.back()'" class="h-city">
+			<span class="iconfont">&lt;</span>
+		</a>
+		<div class="headerCenter">定制信息</div>
+		<a href="javascript:;" href="index.html" class="h-city re-home">
+			<span class="iconfont">&lt;</span>
+		</a>
+	</div>
+	
+	<section class="order">
+        <form id="xuqiu" name="xuqiu" action="" method="post" novalidate="novalidate">
+			<div class="infoC">
+				<h3>联系人信息<span>（带<em>*</em>号必填）</span></h3>
+				<ul>
+					<li><label>联  系  人：</label><em>*</em><input type="text" value="" id="linkman" name="linkman"></li>
+					<li><label>Email/QQ：</label><em>*</em><input type="text" value="" id="qq" name="qq"></li>
+					<li><label>团队名称：</label><em>*</em><input type="text" value="" id="company_name" name="company_name"></li>
+				</ul>
+			</div>
+			<div class="infoC">
+				<h3>基本信息<span>（带<em>*</em>号必填）</span></h3>
+				<ul>
+					<li><label>出 发 地：</label><em>*</em><input type="text" value="" id="cfd" name="cfd"></li>
+					<li><label>目 的 地：</label><input type="text" value="" id="mdd" name="mdd"></li>
+					<li><label>出发日期：</label><em>*</em><input type="text" value="" id="start_time" name="start_time" readonly="readonly"></li>
+					<li><label>游玩天数：</label><input type="text" value="" class="short2" id="days" name="days" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" onafterpaste="this.value=this.value.replace(/[^0-9]/g,'')">天</li>
+					<li><label>出行人数：</label><input type="number" value="" class="short2" id="adult" name="adult" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" onafterpaste="this.value=this.value.replace(/[^0-9]/g,'')">人</li>
+					<li><label>人均预算：</label><input type="text" value="" class="short2" id="avg_money" name="avg_money" onkeyup="this.value=this.value.replace(/[^0-9]/g,'')" onafterpaste="this.value=this.value.replace(/[^0-9]/g,'')">元</li>
+				</ul>
+				<div class="text">
+					<textarea rows="6" id="note" placeholder="您可以补充您的旅游需求：行程安排、交通、酒店、景点、导游等要求，或者其他特殊情况备注。如：请安排多预留购物时间；行程安排不要太紧迫；XX景点要安排..." maxlength="3000" name="note"></textarea>
+				</div>
+			</div>
+			<div class="infoC">
+				<h3>联系方式<span>（带<em>*</em>号必填）</span></h3>
+				<ul>
+					<li><label>验  证  码：</label><em>*</em><input type="text" value="" class="short" name="authcode" id="authcode" maxlength="5"><span><img src="/verifycode" id="yzm_img" onclick="this.src='/verifycode'"></span></li>
+					<li><label>手  机  号：</label><em>*</em><input type="text" value="" class="short" id="phone" name="phone" maxlength="11"><span class="yzm">免费获取验证码<b id="djs" style="display: none">(90)</b></span></li>
+					<li><label class="long">手机验证码：</label><em>*</em><input type="text" value="" class="short" id="yzm" name="yzm" maxlength="6"></li>
+				</ul>
+			</div>
+			<div class="tips">(收不到验证码？联系专属客服：<em><a href="tel:400-680-5166">400-680-5166</a></em>)</div>
+			<input class="btn_submit" value="提交订单" type="submit">
+			<img src="images/foot.png" width="100%">
+		</form>
+	</section>
+	
+	<div class="zhanwei"></div>
+	<div class="jz_conv_8888_bottom-box">
+		<div class="jz_conv_8888_innerWrapper">
+		<div class="jz_conv_8888_bottom-item ">
+		<a href="javascript:openZoosUrl('chatwin');" target="_blank">
+		<div class=" jz_conv_8888_bottom-item-chat">
+		<div class="jz_conv_8888_bottom-item-icon">
+			<img src="images/online.webp">
+		</div>
+		<div class="jz_conv_8888_bottom-item-text"><span>在线沟通</span></div>
+		</div>
+		</a>
+		</div>
+		<div class="jz_conv_8888_bottom-item ">
+		<a href="tel:0991-6860000" target="_blank">
+		<div class=" jz_conv_8888_bottom-item-tel">
+		<div class="jz_conv_8888_bottom-item-icon">
+			<img src="images/phone.webp">
+		</div>
+		<div class="jz_conv_8888_bottom-item-text"><span>电话咨询</span></div>
+		</div>
+		</a>
+		</div>
+		</div>
+	</div>
+	<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.SuperSlide.2.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/basic.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

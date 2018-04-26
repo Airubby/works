@@ -332,14 +332,19 @@ ul, li{
 }
 .h-city {
 	position: absolute;
-    left: 0;
+    left: 5px;
     top: 0;
     display: block;
-    padding: 10px 0 10px 10px;
+    padding: 10px;
     font-size: 24px;
     color: #3a3a3a;
     font-family: "宋体";
     font-weight: bold;
+}
+.re-home{
+    right: 10px;
+    left: auto;
+    transform: rotate(90deg);
 }
 .headerCenter {
     width: 100%;
@@ -374,7 +379,359 @@ ul, li{
     background-color: #fff;
 }
 
+/*定制游*/
+.dingzhi_top{
+    position: relative;
+    margin-bottom: 40px;
+}
+.dingzhi_top img{
+    width: 100%;
+}
+.dingzhi_top a.btn{
+    position: absolute;
+    background: #ff6612;
+    border-radius: 5rem;
+    bottom: -30px;
+    box-shadow: 0 5px #d65813;
+    color: #fff;
+    font-size: 20px;
+    height: 60px;
+    left: 50%;
+    line-height: 60px;
+    margin-left: -100px;
+    text-align: center;
+    width: 200px;
+    z-index: 2;
+    transition: all ease 0.35s;
+}
+.step{
+    text-align: center;
+}
+.step .tel {
+    display: inline-block;
+    line-height: 23px;
+    color: #ffaf22;
+    font-size: 26px;
+    padding-top: 15px;
+}
+.step .tel a{
+    color: #ffaf22;
+}
+.step img {
+    width: 100%;
+    display: block;
+    margin: 30px auto 0;
+}
+.step .tel i {
+    background: url(../images/icondingzhi.png) no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 23px;
+    background-size: 100%;
+    vertical-align: middle;
+    line-height: 23px;
+    margin-right: 5px;
+}
+.step_img{
+    padding: 10px 15px 30px 15px;
+    text-align: center;
+}
+.step_img img{
+    max-width: 490px;
+}
+.Line {
+    background: url(../images/4.jpg) bottom center no-repeat #dddfe0;
+    padding: 20px 0;
+}
+.moreline{
+    background: #fff;
+    padding-top: 0;
+}
+.Line h3 {
+    font-size: 22px;
+    text-align: center;
+    color: #567d04;
+}
+.Line ul {
+    width: 94%;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+.Line ul li {
+    width: 45%;
+    margin: 0 2.5% 15px;
+    float: left;
+    background: #fff;
+}
+.Line ul li .pic {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+.Line ul li .pic img {
+    width: 100%;
+    height: auto;
+}
+.Line ul li h5 {
+    padding: 5px 9px;
+    font-size: 14px;
+    height: 50px;
+    line-height: 23px;
+    overflow: hidden;
+}
+.Line ul li .text {
+    border-top: 1px solid #eeeeee;
+    padding: 5px 9px;
+    font-size: 12px;
+}
 
+.Line ul li .text span {
+    display: block;
+    line-height: 24px;
+}
+.Line ul li span.mdd {
+    font-size: 12px;
+    max-width: 100%;
+    height: 27px;
+    overflow: hidden;
+    line-height: 27px;
+}
+.Line ul li .text span.price {
+    color: #fe7566;
+    margin: 5px 0 0;
+}
+.Line ul li .text span.price em {
+    font-style: normal;
+    font-size: 20px;
+}
+.Line .more {
+    width: 90%;
+    margin: 0 auto;
+    border: 4px solid #567d04;
+    border-radius: 5px;
+    display: block;
+    padding: 8px 0;
+    font-size: 20px;
+    text-align: center;
+    color: #567d04;
+}
+.server {
+    padding: 20px 0;
+}
+
+.server h3 {
+    font-size: 22px;
+    text-align: center;
+    color: #ffa800;
+}
+.server ul {
+    width: 90%;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+.server ul li {
+    width: 50%;
+    padding: 0 15px 15px;
+    float: left;
+    margin-bottom: 15px;
+    position: relative;
+}
+.server ul li div {
+    width: 100%;
+    height: 100%;
+}
+.server ul li div img{
+    width: 100%;
+    border-radius: 50%;
+}
+.server ul li span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -45%;
+    width: 90%;
+    display: block;
+    background: #ff7200;
+    padding: 2px 0;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+.case {
+    background: #f6f6f6;
+    padding: 20px 0;
+}
+.case h3 {
+    font-size: 22px;
+    text-align: center;
+    color: #333;
+}
+.case .title {
+    text-align: center;
+    margin: 15px 0;
+}
+.case .title li {
+    width: 72px;
+    height: 72px;
+    line-height: 72px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #ff9000;
+    display: inline-block;
+    margin: 0 10px;
+    color: #ff9000;
+    cursor: pointer;
+}
+.case .title li.on {
+    background: #ff9000;
+    color: #fff;
+}
+.case .tab {
+    width: 96%;
+    margin: 0 auto;
+}
+.case .tab li {
+    width: 50%;
+    overflow: hidden;
+    float: left;
+    padding: 0 15px 20px;
+    position: relative;
+}
+.case .tab li img{
+    width: 100%;
+}
+.logos {
+    background: #585858;
+    padding: 20px 0;
+    text-align: center;
+}
+.logos h3 {
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+}
+.logos img{
+    width: 100%;
+    max-width: 567px;
+    margin: 20px auto;
+}
+.advantage {
+    padding: 20px 0;
+    text-align: center;
+}
+.advantage h3 {
+    font-size: 22px;
+    text-align: center;
+}
+.advantage .tip {
+    width: 194px;
+    margin: 5px auto;
+    text-align: center;
+    border: 1px solid #333;
+}
+.advantage img{
+    width: 100%;
+    max-width: 524px;
+    margin: 20px auto;
+}
+
+.order .infoC {
+    border-bottom: 1px solid #c9c9c9;
+}
+.order .infoC h3 {
+    font-size: 14px;
+    padding: 15px 20px 5px;
+    color: #666;
+    background: #F9F9F9;
+}
+.order .infoC h3 span {
+    color: #999;
+    font-size: 12px;
+}
+.order em {
+    font-style: normal;
+    color: #ff7700;
+    line-height: 30px;
+}
+.order .infoC ul {
+    border-top: 1px solid #c9c9c9;
+    background: #fff;
+    padding: 0 20px;
+}
+.order .infoC ul li {
+    border-bottom: 1px solid #c9c9c9;
+    display: flex;
+    padding: 10px 0;
+    font-size: 15px;
+    height: 55px;
+    color: #999;
+    line-height: 35px;
+    position: relative;
+}
+.order .infoC ul li label {
+    font-size: 15px;
+    color: #333;
+    width: 90px;
+    text-align: justify;
+    text-align-last: justify;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -webkit-text-align: justify;
+    -webkit-text-align-last: justify;
+}
+.order .infoC ul li input {
+    width: 72%;
+    padding-left: 15px;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 14px;
+    height: 30px;
+    padding-top: 6px;
+    outline: 0;
+    -webkit-appearance: none;
+}
+.order .infoC .text {
+    background: #fff;
+    padding: 25px 20px 15px;
+}
+.order .infoC .text textarea {
+    font-size: 15px;
+    width: 100%;
+    color: #333;
+    line-height: 1.7;
+    border: 1px solid #fff;
+}
+.order .infoC ul li span {
+    width: 33%;
+    font-size: 0.12rem;
+    border-left: 1px solid #c9c9c9;
+    display: inline-block;
+    text-align: center;
+    padding-left: 8px;
+    color: #ff7700;
+}
+
+.order .infoC ul li span.yzm {
+    position: relative;
+}
+.order .tips {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+}
+.btn_submit {
+    width: 80%;
+    display: block;
+    margin: 60px auto 8px;
+    height: 50px;
+    border-radius: 10px;
+    background: #ff9600;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
 
 
 
