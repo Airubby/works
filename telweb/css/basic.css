@@ -11,6 +11,7 @@ body{
     color: #585858;
     font-family: "微软雅黑";
     font-size: 14px;
+    overflow-x: hidden;
 }
 em{
     font-style: normal;
@@ -25,7 +26,42 @@ a:hover{
 ul, li{
 	list-style: none;
 }
-
+.searchBox {
+    width: 230px;
+    height: 27px;
+    line-height: 27px;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    z-index: 999;
+    top: 15px;
+    left: 50%;
+    margin-left: -115px;
+}
+.searchBox .searchText {
+    background-color: transparent;
+    border: 0;
+    color: #333;
+    width: 100%;
+    padding-left: 5px;
+    position: relative;
+    z-index: 10;
+    outline: none;
+}
+.searchBox .searchBtn {
+    position: absolute;
+    z-index: 100;
+    right: 2px;
+    top: 2px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/iconfont-search2.png) no-repeat; 
+    background-size: 20px auto;
+    cursor: pointer;
+}
 .index_top{
     width: 100%;
     height: 80px;
@@ -733,6 +769,234 @@ ul, li{
     font-size: 16px;
 }
 
+/* 内容页 */
+.appInfo_item{
+    position: absolute;
+    bottom: 15px;
+    color: #fff;
+    padding: 4px 10px;
+    background-color: rgba(214, 214, 214, 0.46);
+    line-height: 1;
+    border-radius: 10px;
+    z-index: 100;
+}
+.appInfo_item2{
+    right: 10px;
+}
+.appInfo_item1{
+    left: 10px;
+}
+.content_box{
+    padding: 10px;
+}
+.content_box h2{
+    font-size: 16px;
+    color: #585858;
+    font-weight: bold;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+.content_box p{
+    max-height: 60px;
+    overflow: hidden;
+}
+.c-info-price {
+    margin-top: 10px;
+    overflow: hidden;
+}
+.content_box .c-info-price span {
+    color: #fd5050;
+    float: left;
+}
+.content_box .c-info-price .item1 {
+    font-size: 10px;
+    margin-top: 6px;
+}
+.content_box .c-info-price .item2 {
+    font-size: 18px;
+    margin-left: 1px;
+}
+.content_box .c-info-price .item3 {
+    font-size: 10px;
+    margin-top: 5px;
+    margin-left: 1px;
+    margin-right: 15px;
+}
+.c-place {
+    background-color: #fff;
+    height: 40px;
+    line-height: 40px;
+}
+.show_box2{
+    width: 100%;
+    height: 40px;
+    z-index: 9999 !important;
+}
+.show_box2 ul {
+    z-index: 999;
+    display: -webkit-box;
+    color: #666;
+    font-size: 14px;
+    border-bottom: 1px #ccc solid;
+    width: 100%;
+    background-color: #FFF;
+    top: 0;
+}
+.show_box2 li {
+    -webkit-box-flex: 1;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+.show_box2 li.active{
+    border-bottom: 2px #fcbd00 solid;
+    color: #fcbd00;
+    margin-bottom: -1px;
+}
+.content_days{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+.app_navItem_title,.app_content_day{
+    padding: 10px 0;
+    border-bottom: 2px #eee solid;
+    color: #666;
+    display: -webkit-box;
+    font-size: 14px;
+}
+.app_navItem_title .app_icon, .app_content_day .app_icon {
+    display: block;
+    margin-right: 3px;
+    width: 20px;
+    height: 20px;
+}
+.app_navItem_title .app_icon.icon_1 {
+    background: url(../images/tese.png) no-repeat;
+    background-position: 0 1px;
+    background-size: 16px;
+}
+.app_navItem_title .app_icon.icon_2 {
+    background: url(../images/anpai.png) no-repeat;
+    background-position: 0 1px;
+    background-size: 16px;
+}
+.app_navItem_title .app_icon.icon_3 {
+    background: url(../images/feiyong.png) no-repeat;
+    background-position: 0 1px;
+    background-size: 16px;
+}
+.app_navItem_title .app_icon.icon_4 {
+    background: url(../images/xuzhi.png) no-repeat;
+    background-position: 0 1px;
+    background-size: 16px;
+}
+.app_content_day {
+    border-bottom: 1px #eee solid;
+    line-height: 30px;
+}
+.icon-plane, .icon-bus, .icon-train, .icon-walk, .icon-riding, .icon-ship, .icon-vehicle, .icon-bike, .icon-car {
+    width: 22px;
+    height: 22px;
+    margin: 0 5px;
+    vertical-align: -6px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 22px;
+}
+.icon-train {
+    background-image: url(../images/train.png);
+}
+.icon-plane {
+    background-image: url(../images/plane.png);
+}
+.icon-bus {
+    background-image: url(../images/bus.png);
+}
+.app_day_msg {
+    color: #ff9b00;
+    border: 1px #ff9b00 dotted;
+    padding: 3px 7px;
+    padding-left: 10px;
+    margin-top: 15px;
+    background-color: #fffde1;
+}
+.app_day_msg.app_other strong {
+    display: inline-block;
+    font-weight: bold;
+    padding-left: 20px;
+    background: url(../images/shou.png) no-repeat 2px 2px;
+    background-size: 14px;
+}
+.app_day_content{
+    margin: 10px 0;
+}
+.app_day_info li {
+    list-style: none;
+    margin-left: 0;
+    padding: 4px 0;
+    padding-left: 24px;
+    display: -webkit-box;
+}
+.app_day_info li.app_info_food {
+    background: url(../images/food.png) no-repeat 0 2px;
+    background-size: 16px;
+}
+.app_day_info li .app_info_title {
+    margin-right: 3px;
+}
+.app_day_info li .app_info_content {
+    -webkit-box-flex: 1;
+    display: block;
+}
+.app_day_info li.app_info_hotal {
+    background: url(../images/hotal.png) no-repeat 0 5px;
+    background-size: 18px;
+}
+.m2_okBox {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    display: -webkit-flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.m2_okBox .m2_ok_kefu {
+    width: 20%;
+    text-align: center;
+    color: #666;
+}
+.m2_okBox .m2_ok_kefu:before {
+    content: '';
+    background: url(../images/content_kefu.png) no-repeat center center;
+    height: 25px;
+    display: block;
+    background-size: 20px;
+}
+.m2_okBox .c-ok {
+    display: block;
+    height: 46px;
+    background-color: #fcbd00;
+    color: #fff;
+    line-height: 46px;
+    text-align: center;
+    font-size: 16px;
+    width: 80%;
+}
+.content_container{
+    padding-bottom: 60px;
+}
+.input-group {
+    margin: 10px 0 10px 0 !important;
+}
+.form .btn {
+    margin: 10px 0 15px 0;
+}
 
 
 
